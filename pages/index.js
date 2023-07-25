@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
 import ProjectsBtn from "../components/ProjectsBtn";
+import Avatar from "../components/Avatar";
+import ParticlesContainer from "../components/ParticlesContainer";
 
 const Home = () => {
   return (
@@ -52,6 +54,18 @@ const Home = () => {
         xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
         ></div>
       </div>
+      {/* Particles */}
+      <ParticlesContainer />
+      <motion.div
+        variants={fadeIn("up", 0.5)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        transition={{ duration: 1.0, ease: "easeInOut" }}
+        className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+      >
+        <Avatar />
+      </motion.div>
     </div>
   );
 };
