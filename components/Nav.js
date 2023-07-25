@@ -34,7 +34,7 @@ const Nav = () => {
     <nav
       className="flex flex-col items-center xl:justify-center gap-y-4
     fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full
-    xl:w-16 xl:max-w-md xl:h-screen bg-red-500/30"
+    xl:w-16 xl:max-w-md xl:h-screen"
     >
       <div
         className="flex w-full xl:flex-col items-center

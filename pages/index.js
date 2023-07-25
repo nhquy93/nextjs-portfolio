@@ -35,11 +35,9 @@ const Home = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </div>
           <motion.div
             variants={fadeIn("down", 0.4)}
+            className="flex justify-center xl:hidden relative"
             initial="hidden"
             animate="show"
             exit="hidden xl:flex"
